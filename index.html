@@ -2,28 +2,32 @@
 <html>
 <head>
 	<title>New York Art & Prep</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="index.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css" />
 
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <body>
 	<div class='container'>
 		<div class='row' id='row'>
-			<div class='col l4 m12' id='header'>
-				<h1> New York Art &amp; Prep </h1>
+			<div class='col l4 m12 port'>
+				<h2> New York Art &amp; Prep </h2>
 				<p class='flow-text'>
-					Private lessons for all ages and levels of experience. <br/> 
-					<small>Portfolio Development and Art Instruction in Traditional or Digital Media.</small>
+					Portfolio Development and Art Instruction in Traditional or Digital Media.<br/>
+					<small>Private lessons for all ages and levels of experience.</small>
 				</p>
 			</div>
-			<div class='col l8 m12 right' id='cards'>
-				<div class="row">
+			<div class='col l8 m12 right starboard'>
+				<div class="row" id='home'>
+					
 					<div class="col s12 m6"> 
-						<div class="card">
+						<div class="card" id='instruction'>
 							<div class="card-image"> 
 								<img src="img/instruction.jpg"> 
 							</div> 
@@ -34,7 +38,18 @@
 					</div>
 
 					<div class="col s12 m6"> 
-						<div class="card">
+						<div class="card" id='animation'>
+							<div class="card-image"> 
+								<img src="img/digital.jpg"> 
+							</div> 
+							<div class="card-content">
+								<h5> Animation </h5> 
+							</div> 
+						</div> 
+					</div> 
+
+					<div class="col s12 m6"> 
+						<div class="card" id='portfolio'>
 							<div class="card-image"> 
 								<img src="img/portfolio.jpg"> 
 							</div> 
@@ -45,7 +60,7 @@
 					</div>
 
 					<div class="col s12 m6"> 
-						<div class="card">
+						<div class="card" id='photography'>
 							<div class="card-image"> 
 								<img src="img/photography.jpg"> 
 							</div> 
@@ -54,17 +69,59 @@
 							</div>
 						</div> 
 					</div>
+				</div>
+				<div class='row' id='back'>
+					<a class="waves-effect waves-light btn-flat white">
+						<i class='material-icons left'>arrow_back</i>
+						Back
+					</a>
+				</div>
+				<div class='row' id='instruction'>
+					<h3>Instruction</h3>
+					<p class='flow-text'>Build your drawing, painting, color, design, and mixed media skills in
+					traditional or digital mediums with instructors from the <a href='www.newschool.edu/parsons/'>Parsons School of Design</a>, the <a href='www.theartstudentsleague.org/'>Art Students League</a>, and the <a href='www.sva.edu/'>School of Visual Arts</a>.</p>
+					<p class='flow-text'> Traditional Media (including) pencil, pen and ink, watercolor, etc. </p>
+					<ul class='listblock'>
+						<li> Observational Drawing </li>
+						<li> Portraits/Self Portraits </li>
+						<li> Landscapes </li>
+						<li> Still Life </li>
+						<li> Composition </li>
+						<li> Perspective </li>
+						<li> Painting </li>
+						<li> Printmaking </li>
+						<li> Dynamic Light and Shadow </li>
+					</ul>
+					<p class='flow-text'> Digital Media</p>
+					<ul class='listblock'>
+						<li> SketchBook Pro </li>
+						<li> Corel Painter </li>
+						<li> Storyboard Pro </li>
+						<li> Toon Boom Harmony </li>
+						<li> Final Cut Pro </li>
+					</ul>
+				</div>
+				<div class='row' id='portfolio'>
+					<h3>Portfolio Development</h3>
+					<p class='flow-text'>Portfolio preparation for high school and college bound students. We can help you develop a great portfolio with a variety of mediums, techniques, and styles. <br/> <br/> Whatever your interest, we’ll work with you, one on one, to create a great portfolio that meets school guidelines for content and presentation and
+					prepare you for the audition tests.</p>
+				</div>
+				<div class='row' id='animation'>
+					<h3>Animation</h3>
 
-					<div class="col s12 m6"> 
-						<div class="card">
-							<div class="card-image"> 
-								<img src="img/digital.jpg"> 
-							</div> 
-							<div class="card-content">
-								<h5> Animation </h5> 
-							</div> 
-						</div> 
-					</div> 
+					<p class='flow-text'> Learn Animation from Idea to Screen — Private Lessons With A Professional Animation Director <br/> <small>Even the most sophisticated computer generated films begin with the most basic of tools - pencil and paper. Explore the vibrant, expanding field of animation and learn the skills used to write and create art for animation. </small></p>
+					<ul class='listblock'>
+						<li>Writing for Animation</li>
+						<li>Design & Development</li>
+						<li>Storyboarding</li>
+						<li>Traditional & Digital Animation</li>
+					</ul>
+					
+
+				</div>
+				<div class='row' id='photography'>
+					<h3>Photography for 2D and 3D Artwork</h3>
+					<p class='flow-text'>From proper lighting to final edited image, New York Art Prep handles all aspects of photographing your artwork. <br/> Websites and portfolios require high quality digital photos of your artwork. Show your painting and sculpture to its best advantage.</p>
 				</div>
 			</div>
 		</div>
@@ -77,11 +134,24 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		// $('#header').pushpin({ top: $('body').offset().top });
+		$('.starboard .row').hide(); //hide all .row's
+		$('#photography.row').show(); //default .row
+		// $('#back.row').show();
 
-		$('#cards .row').masonry({
-		  // options
+		$('#home').masonry({
 		  itemSelector: '.col'
+		});
+
+		$('#home .card').click(function(){
+			console.log($(this).attr('id'));
+			$('.starboard .row').hide();
+			$('#back.row').show();
+			$('#'+$(this).attr('id')+'.row').show();
+		});
+
+		$('#back a').click(function(){
+			$('.starboard .row').hide(); //hide all .row's
+			$('#home.row').show(); //default .row
 		});
 	});
 </script>
