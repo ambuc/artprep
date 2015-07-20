@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Art & Prep</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+	<div class='container'>
+		<div class='row' id='row'>
+			<div class='col l4 m12' id='header'>
+				<h1> New York Art &amp; Prep </h1>
+				<p class='flow-text'>
+					Private lessons for all ages and levels of experience. <br/> 
+					<small>Portfolio Development and Art Instruction in Traditional or Digital Media.</small>
+				</p>
+			</div>
+			<div class='col l8 m12 right' id='cards'>
+				<div class="row">
+					<div class="col s12 m6"> 
+						<div class="card">
+							<div class="card-image"> 
+								<img src="img/instruction.jpg"> 
+							</div> 
+							<div class="card-content">
+								<h5> Art Instruction </h5> 
+							</div>
+						</div> 
+					</div>
+
+					<div class="col s12 m6"> 
+						<div class="card">
+							<div class="card-image"> 
+								<img src="img/portfolio.jpg"> 
+							</div> 
+							<div class="card-content">
+								<h5> Portfolio Development and Preparation </h5> 
+							</div>
+						</div> 
+					</div>
+
+					<div class="col s12 m6"> 
+						<div class="card">
+							<div class="card-image"> 
+								<img src="img/photography.jpg"> 
+							</div> 
+							<div class="card-content">
+								<h5> Photography for 2D and 3D Artwork </h5> 
+							</div>
+						</div> 
+					</div>
+
+					<div class="col s12 m6"> 
+						<div class="card">
+							<div class="card-image"> 
+								<img src="img/digital.jpg"> 
+							</div> 
+							<div class="card-content">
+								<h5> Animation </h5> 
+							</div> 
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// $('#header').pushpin({ top: $('body').offset().top });
+
+		$('#cards .row').masonry({
+		  // options
+		  itemSelector: '.col'
+		});
+	});
+</script>
+
+
+</html>
